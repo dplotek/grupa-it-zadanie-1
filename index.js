@@ -44,7 +44,7 @@ const displayNumbers = (array, column) => {
 const generateRandomNumbers = (number) => {
     cleanArraysAndColumns();
     for(let i = 0; i <number; i++){
-        const randomNumber = Math.floor(Math.random() * (maxRange - minRange)) +minRange;
+        const randomNumber = Math.floor(Math.random() * (maxRange - minRange + 1)) + minRange;
         sortNumbersEvenAndOddNumbers(randomNumber);
     }
     oddNumbersArray.sort(sortFromMinToMax);
